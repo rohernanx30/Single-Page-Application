@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.contenido {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: 220px; /* espacio para el sidebar */
+}
+
+/* Para móviles: el contenido ocupa todo el ancho */
+@media (max-width: 768px) {
+  .contenido {
+    margin-left: 0;
+  }
+}

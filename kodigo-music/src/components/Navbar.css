@@ -1,0 +1,81 @@
+/* Botón ☰ fijo en la esquina inferior izquierda */
+.toggle-nav {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left:15px;
+  z-index: 2001;
+  font-size: 2rem;
+  background: #1db954;
+  border: none;
+  border-radius: 50%;
+  color: black;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #000;
+  padding: 1rem; font-family: 'Century Gothic';
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  z-index: 2000;
+}
+
+.logo {
+  color: #1db954;
+  margin-bottom: 2rem;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.sidebar nav a:hover {
+  background-color: #1db954;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .toggle-nav {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(0);
+    width: 220px;
+    height: 100vh;
+  }
+
+  .sidebar.oculto {
+    transform: translateX(-100%);
+  }
+}

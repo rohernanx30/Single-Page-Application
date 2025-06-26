@@ -1,0 +1,210 @@
+body {
+  background-color: #121212;
+  color: white;
+  margin: 0;
+  font-family: 'Century Gothic';
+  input,
+  textarea,
+  select,
+  button {font-family: 'Century Gothic', sans-serif;}
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px; /* espacio entre el label y el input */
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  margin-bottom: 16px; /* espacio entre el input y el siguiente label */
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+.contacto-pagina {
+  margin-left: 35px; /* para que no lo tape la sidebar */
+  padding: 2rem;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #000;
+  padding: 1rem;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  color: #1db954;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #1db954;
+}
+
+.contenido {
+  padding: 2rem;
+  flex: 1;
+  font-family: 'Century Gothic';
+}
+
+.form-box {
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #181818;
+  border-radius: 10px;
+  
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  background: #282828;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tooltip-error {
+  background-color: #ff6026;
+  color: white;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.faq-answer {
+  background-color: #2b2b2b;
+  color: #ccc;
+  padding: 1rem;
+  border-top: 1px solid #444;
+}
+.faq-container {
+  margin-top: 1rem;
+  margin: 1.5rem auto 2rem auto; /*margin de abajo */
+  display: block;
+}
+
+.faq-item {
+  border: 1px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: #1e1e1e;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.faq-question:hover {
+  background-color: #1db954;
+}
+
+.faq-text {
+  flex: 1;
+}
+
+.faq-arrow {
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+.faq-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  background-color: #2b2b2b;
+  color: #ccc;
+  padding: 1rem;
+  border-top: 1px solid #444;
+}
+.boton-enviar {
+  width: 60%;
+  padding: 14px;
+  background-color: #1db954;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 1rem auto 0 auto; /* ← este lo centra horizontalmente */
+  display: block;
+  transition: background-color 0.3s ease;
+}
+.boton-enviar:hover {
+  background-color: #17a44b;
+}
+.mensaje-exito {
+  background-color: #1db954;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  animation: fadeInOut 4s ease-in-out;
+  text-align: center;
+  max-width: 100%;
+}
+
+.mensaje-exito .titulo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.mensaje-exito .detalle {
+  font-size: 0.9rem;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.campo-password {
+  position: relative;
+}
+
+.ver-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
