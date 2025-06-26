@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import './Navbar.css'
-
+import icono from "../assets/musica.png"
 
 function Navbar() {
   const [abierto, setAbierto] = useState(false)
@@ -27,7 +27,7 @@ function Navbar() {
 
       <div className={`sidebar ${esMovil && !abierto ? 'oculto' : ''}`}>
         <h2 className="logo flex items-center gap-2">
-        <img src="./src/assets/musica.png"  className="logo-img" /> Kodigo Music</h2>
+        <img src={icono}  className="logo-img" /> Kodigo Music</h2>
 
         <nav>
           <Link to="/" onClick={() => setAbierto(false)}>Inicio</Link>
