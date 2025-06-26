@@ -1,12 +1,35 @@
-# React + Vite
+# 🎧 Kodigo Music
+**Kodigo Music** es una SPA (Single Page Application) inspirada en plataformas líderes de música digital como **Spotify**, **Deezer** y **Apple Music**. Esta aplicación ha sido desarrollada como parte de una actividad académica para demostrar conocimientos en **ReactJS**, diseño responsive, manejo de rutas, formularios validados y despliegue en entornos de producción gratuitos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 🚧 Esta versión es un primer entregable enfocado en el **diseño visual**, **estructura técnica** y **validaciones de formularios**. Funcionalidades como reproducción musical o navegación completa de perfil no están implementadas, ya que el enfoque actual es en diseño y experiencia de usuario.
 
-Currently, two official plugins are available:
+---
+## 🧑‍💻 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ ReactJS (Vite)
+- 📦 React Router DOM
+- ✅ React Hook Form (validación de formularios)
+- 🎨 CSS personalizado (diseño 100% responsive)
+- 📱 Iconos de `react-icons`
+- 📤 Deploy en Netlify https://sap-kodigomusic.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Características del Proyecto
+
+- ✅ SPA completamente **responsive**, adaptable a móviles, tablets y escritorio.
+- 🧭 Implementación de rutas con **`react-router-dom`**.
+- 📥 **Formulario validado** (registro/inicio de sesión) con feedback visual.
+- 🔔 Uso de **notificaciones tipo toast** para acciones como búsqueda, acceso al perfil o botón Premium.
+- 🔍 Barra de búsqueda interactiva (sin funcionalidad real en esta etapa).
+- 📂 Estructura limpia y modular de componentes en React.
+- 🧱 Diseño basado en sistemas reales (Spotify y Apple Music) pero con elementos simplificados.
+
+> 🎯 **Importante**: La aplicación **no reproduce música**, **no realiza búsquedas reales** ni **navega al perfil o Premium** por ahora. Estas funcionalidades podrían ser agregadas en una futura etapa.
+
+---
+## 👩‍💻 Desarrollado por
+- Rocio Guadalupe Martínez Hernández
+---
+## 📄 Licencia y créditos
+© Todos los derechos reservados. Este proyecto fue creado con fines académicos para el programa Kodigo. Todos los recursos gráficos son de uso educativo. No se distribuye con fines comerciales.
