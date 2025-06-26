@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Inicio.css";
 import { FaCircleUser } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
+import cardi from "../assets/cardi.jpg"
 
 function Inicio() {
   const [toast, setToast] = useState(null);
@@ -90,7 +91,7 @@ function Inicio() {
           <h2>Similares a Rauw Alejandro</h2>
             <div className="tarjetas">
               <div className="tarjeta">
-                <img src="./src/assets/cardi.jpg" alt="CardiB" />
+                <img src={cardi} alt="CardiB" />
                 <p>I LIKE IT</p>
                 <span>Cardi B</span>
               </div>
