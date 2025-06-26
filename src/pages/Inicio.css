@@ -31,7 +31,6 @@ body {
   border: none;
   background-color: #333;
   color: white;
-  
 }
 
 .premium-btn {
@@ -202,33 +201,10 @@ premium-icon {
   bottom: auto;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translate(-50%, 10px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-}
-
-@keyframes fadeout {
-  from {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-  to {
-    opacity: 0;
-    transform: translate(-50%, 10px);
-  }
-}
-
 /*Media Queries */
 @media (max-width: 768px) {
   .top-bar {
-    
-    align-items: flex-start;
+  align-items: flex-start;
   }
 
   .tarjeta {
@@ -272,16 +248,13 @@ premium-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
-    
+    gap: 8px; 
     flex-wrap: nowrap;
   }
 
   .top-bar input {
     flex: 1;
     min-width: 0;
-   
-   
   }
 
   .premium-btn {
@@ -289,7 +262,6 @@ premium-icon {
     border-radius: 50%;
     width: 31px;
     height: 31px;
-   
     padding: 0;
     display: flex;
     align-items: center;
