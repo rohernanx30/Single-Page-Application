@@ -3,6 +3,22 @@ import "./Inicio.css";
 import { FaCircleUser } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa";
 import cardi from "../assets/cardi.jpg"
+import almas from "../assets/Almas.jpg"
+import anuel from "../assets/anuel.jpg"
+import jbalvin from "../assets/balvin.jpg"
+import cree from "../assets/cree.jpg"
+import feid from "../assets/feidnormal.jpg"
+import jhay from "../assets/Jhayco.jpg"
+import mami from "../assets/mami.jpg"
+import paulo from "../assets/paulo.jpg"
+import peso from "../assets/peso.jpg"
+import rauw from "../assets/raw.jpg"
+import shakira from "../assets/shaki.jpg"
+import velda from "../assets/velda.jpg"
+import victor from "../assets/victor.jpg"
+import yandel from "../assets/yandel.jpg"
+import academy from "../assets/academy.jpg"
+
 
 function Inicio() {
   const [toast, setToast] = useState(null);
@@ -55,7 +71,7 @@ function Inicio() {
 
         <div className="playlist-grid">
           <div className="playlist-card">
-            <img src="./src/assets/shaki.jpg" alt="Shakira" />
+            <img src={shakira} alt="Shakira" />
               <div className="playlist-info">
                 <p className="playlist-titulo">Shakira</p>
                 <span className="playlist-desc">Las mujeres ya no lloran</span>
@@ -63,7 +79,7 @@ function Inicio() {
           </div>
 
           <div className="playlist-card">
-            <img src="./src/assets/cree.jpg" alt="Maluma" />
+            <img src={cree} alt="Maluma" />
               <div className="playlist-info">
                 <p className="playlist-titulo">Maluna y Karol G</p>
                 <span className="playlist-desc">Recordando sus inicios</span>
@@ -71,7 +87,7 @@ function Inicio() {
           </div>
 
           <div className="playlist-card">
-            <img src="./src/assets/mami.jpg" alt="Feid" />
+            <img src={mami} alt="Karolg" />
             <div className="playlist-info">
               <p className="playlist-titulo">Mami-Karol G y Becky G</p>
               <span className="playlist-desc">Lo que no sirve, que no estorbe</span>
@@ -79,7 +95,7 @@ function Inicio() {
           </div>
 
           <div className="playlist-card">
-            <img src="./src/assets/peso.jpg" alt="Peso" />
+            <img src={peso}  alt="Peso" />
               <div className="playlist-info">
                 <p className="playlist-titulo">Lo más nuevo</p>
                 <span className="playlist-desc">Actualización semanal de Peso Pluma</span>
@@ -97,72 +113,71 @@ function Inicio() {
               </div>
 
               <div className="tarjeta">
-                <img src="./src/assets/Almas.jpg" alt="Almas Gemelas" />
+                <img src={almas} alt="Almas Gemelas" />
                 <p>ALMAS GEMELAS</p>
                 <span>Myke Towers</span>
               </div>
 
               <div className="tarjeta">
-                <img src="./src/assets/feidnormal.jpg" alt="Feid" />
+                <img src={feid} alt="Feid" />
                 <p>NORMAL</p>
                 <span>Feid</span>
               </div>
 
               <div className="tarjeta">
-                <img src="./src/assets/paulo.jpg" alt="Paulo" />
+                <img src={paulo} alt="Paulo" />
                 <p>CUANDO TE BESÉ</p>
                 <span>Paulo Londra</span>
               </div>
 
               <div className="tarjeta">
-                <img src="./src/assets/velda.jpg" alt="Bad" />
+                <img src={velda} alt="Bad" />
                 <p>VELDÁ</p>
                 <span>Bad Bunny</span>
               </div>
 
               <div className="tarjeta">
-                <img src="./src/assets/victor.jpg" alt="Victor" />
+                <img src={victor} alt="Victor" />
                 <p>MALA Y PELIGROSA</p>
                 <span>Víctor Manuel</span>
               </div>
-             
             </div>
 
           <div className="seccion">
             <h2>Hecho para ti</h2>
               <div className="tarjetas">
                 <div className="tarjeta">
-                  <img src="./src/assets/academy.jpg" alt="Avenger" />
+                  <img src={academy} alt="Avenger" />
                   <p>MIX DIARIO 1</p>
                   <span>The Avangers</span>
                 </div>
             
                 <div className="tarjeta">
-                  <img src="./src/assets/Anuel.jpg" alt="Anuel" />
+                  <img src={anuel} alt="Anuel" />
                   <p>MIX DIARIO 2</p>
                   <span>Anuel AA</span>
                  </div>
 
                 <div className="tarjeta">
-                  <img src="./src/assets/Jhayco.jpg" alt="Jhayco" />
+                  <img src={jhay} alt="Jhayco" />
                   <p>MIX DIARIO 3</p>
                   <span>Jhayco</span>
                 </div>
 
                 <div className="tarjeta">
-                  <img src="./src/assets/yandel.jpg" alt="Yandel" />
+                  <img src={yandel} alt="Yandel" />
                   <p>MIX DIARIO 4</p>
                   <span>Yandel</span>
                 </div>
 
                 <div className="tarjeta">
-                  <img src="./src/assets/raw.jpg" alt="Rauw" />
+                  <img src={rauw} alt="Rauw" />
                   <p>MIX DIARIO 5</p>
                   <span>Rauw Alejandro</span>
                 </div>
 
                 <div className="tarjeta">
-                  <img src="./src/assets/balvin.jpg" alt="Jbalvin" />
+                  <img src={jbalvin} alt="Jbalvin" />
                   <p>MIX DIARIO 6</p>
                   <span>JBalvin</span>
                 </div>
